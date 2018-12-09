@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cv_face
+# Target rules for targets named DrawPatterns
 
 # Build rule for target.
-cv_face: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv_face
-.PHONY : cv_face
+DrawPatterns: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DrawPatterns
+.PHONY : DrawPatterns
 
 # fast build rule for target.
-cv_face/fast:
-	$(MAKE) -f CMakeFiles/cv_face.dir/build.make CMakeFiles/cv_face.dir/build
-.PHONY : cv_face/fast
+DrawPatterns/fast:
+	$(MAKE) -f CMakeFiles/DrawPatterns.dir/build.make CMakeFiles/DrawPatterns.dir/build
+.PHONY : DrawPatterns/fast
 
-cv-face.o: cv-face.cpp.o
+DrawPatterns.o: DrawPatterns.cpp.o
 
-.PHONY : cv-face.o
+.PHONY : DrawPatterns.o
 
 # target to build an object file
-cv-face.cpp.o:
-	$(MAKE) -f CMakeFiles/cv_face.dir/build.make CMakeFiles/cv_face.dir/cv-face.cpp.o
-.PHONY : cv-face.cpp.o
+DrawPatterns.cpp.o:
+	$(MAKE) -f CMakeFiles/DrawPatterns.dir/build.make CMakeFiles/DrawPatterns.dir/DrawPatterns.cpp.o
+.PHONY : DrawPatterns.cpp.o
 
-cv-face.i: cv-face.cpp.i
+DrawPatterns.i: DrawPatterns.cpp.i
 
-.PHONY : cv-face.i
+.PHONY : DrawPatterns.i
 
 # target to preprocess a source file
-cv-face.cpp.i:
-	$(MAKE) -f CMakeFiles/cv_face.dir/build.make CMakeFiles/cv_face.dir/cv-face.cpp.i
-.PHONY : cv-face.cpp.i
+DrawPatterns.cpp.i:
+	$(MAKE) -f CMakeFiles/DrawPatterns.dir/build.make CMakeFiles/DrawPatterns.dir/DrawPatterns.cpp.i
+.PHONY : DrawPatterns.cpp.i
 
-cv-face.s: cv-face.cpp.s
+DrawPatterns.s: DrawPatterns.cpp.s
 
-.PHONY : cv-face.s
+.PHONY : DrawPatterns.s
 
 # target to generate assembly for a file
-cv-face.cpp.s:
-	$(MAKE) -f CMakeFiles/cv_face.dir/build.make CMakeFiles/cv_face.dir/cv-face.cpp.s
-.PHONY : cv-face.cpp.s
+DrawPatterns.cpp.s:
+	$(MAKE) -f CMakeFiles/DrawPatterns.dir/build.make CMakeFiles/DrawPatterns.dir/DrawPatterns.cpp.s
+.PHONY : DrawPatterns.cpp.s
 
 # Help Target
 help:
@@ -157,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... cv_face"
+	@echo "... DrawPatterns"
 	@echo "... edit_cache"
-	@echo "... cv-face.o"
-	@echo "... cv-face.i"
-	@echo "... cv-face.s"
+	@echo "... DrawPatterns.o"
+	@echo "... DrawPatterns.i"
+	@echo "... DrawPatterns.s"
 .PHONY : help
 
 

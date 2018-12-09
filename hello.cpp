@@ -1,10 +1,11 @@
-#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 
 int main()
 {
     cv::Mat img(1024, 1024, CV_8UC3, cv::Scalar(0));
     
+    //Place the text in the image we created
     cv::putText (img, 
 		"High Level Design of Hardware Software System Project",
 		cv::Point(10, img.rows / 2),
@@ -14,5 +15,6 @@ int main()
 		2);
 
      cv::imshow("Hello!", img);
+     cv::imwrite("data/Hello.jpg",img);
      cv::waitKey();
 }
